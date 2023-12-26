@@ -1,0 +1,26 @@
+.cost-item-left {
+  display: grid;
+  grid-template-columns: 77px 1fr 1fr;
+  grid-gap: 8px;
+  align-items: center;
+}
+
+.btn-block__inner {
+    display: flex;
+}
+
+.cost-item__price-input {
+    margin-right: 15px;
+}
+
+.btn-save {
+    margin-right: 7px;
+}
+
+.btn-cancel {
+    margin-right: 15px;
+}
+
+.btn-edit {
+    margin-right: 15px;
+}

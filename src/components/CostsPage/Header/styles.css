@@ -1,0 +1,14 @@
+form {
+    align-items: flex-end;
+}
+
+.form-item {
+    margin-right: 10px;
+}
+
+.add-bin {
+    position: relative;
+    min-width: 96px;
+    height: 30px;
+}
+
