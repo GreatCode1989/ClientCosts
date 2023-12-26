@@ -40,15 +40,6 @@ export const AuthPage = ({ type }: { type: "login" | "registration" }) => {
 
     const result = await AuthClient.login(username, password);
 
-    if (!result) {
-      setSpinner(false);
-      handleAlertMessage({
-        alertText: "Введите правильное имя пользователя или пароль",
-        alertStatus: "warning",
-      });
-      return;
-    }
-
     handleAuthResponse(result, "/costs", "Вход выполнен");
   };
 
@@ -72,15 +63,6 @@ export const AuthPage = ({ type }: { type: "login" | "registration" }) => {
     }
 
     const result = await AuthClient.registration(username, password);
-
-    if (!result) {
-      setSpinner(false);
-      handleAlertMessage({
-        alertText: "Пользователь с таким именем уже существует",
-        alertStatus: "warning",
-      });
-      return;
-    }
 
     handleAuthResponse(result, "/login", "Регистрация выполнена");
   };
