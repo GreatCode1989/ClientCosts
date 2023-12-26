@@ -38,7 +38,7 @@ export const CostsItem = ({ cost, index }: ICostsItemProps) => {
 
     if (
       newText === cost.text &&
-      newPrice === cost.price &&
+      +newPrice === +cost.price &&
       newDate === cost.date
     ) {
       setEditSpinner(false);
