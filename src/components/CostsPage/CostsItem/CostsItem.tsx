@@ -133,8 +133,8 @@ export const CostsItem = ({ cost, index }: ICostsItemProps) => {
             className="form-control cost-item__price-input"
           />
         ) : (
-          <span style={{ marginRight: "10px", marginTop: "7px" }}>
-            Сумма {cost.price}
+          <span style={{ marginRight: "35px", marginTop: "7px" }}>
+            Сумма: {cost.price}
           </span>
         )}
         {edit ? (
