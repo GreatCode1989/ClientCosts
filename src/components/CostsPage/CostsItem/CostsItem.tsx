@@ -142,7 +142,7 @@ export const CostsItem = ({ cost, index }: ICostsItemProps) => {
         {edit ? (
           <div className="btn-block__inner">
             <button className="btn btn-success btn-save" onClick={handleEditCost}>
-              {editSpinner ? <Spinner top={5} left={38} /> : "Сохранить"}
+              {editSpinner ? <Spinner top={5} left={34} /> : "Сохранить"}
             </button>
             <button
               className="btn btn-danger btn-cancel"
