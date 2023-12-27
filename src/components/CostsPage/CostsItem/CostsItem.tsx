@@ -51,7 +51,7 @@ export const CostsItem = ({ cost, index }: ICostsItemProps) => {
       return;
     }
 
-    setEdit(false)
+   
 
     const authData = getAuthDataFromLS();
 
@@ -64,9 +64,11 @@ export const CostsItem = ({ cost, index }: ICostsItemProps) => {
 
     if (!updatedCost) {
       setEditSpinner(false);
+      setEdit(false)
       return;
     }
 
+    setEdit(false)
     setEditSpinner(false)
     updateCost(updatedCost)
     handleAlertMessage({ alertText: 'Успешно обновлено', alertStatus: 'success'})

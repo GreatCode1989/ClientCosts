@@ -1,0 +1,20 @@
+@media (max-width: 590px) {
+    .navbar {
+        position: relative;
+        padding-bottom: 50px;
+    }
+
+    .navbar button {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+    }
+
+    .btn-theme {
+        transform: translateX(-110%)
+    }
+
+    .btn-logout {
+        transform: translateX(5%);
+    }
+}

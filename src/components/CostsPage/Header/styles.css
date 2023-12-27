@@ -6,9 +6,24 @@ form {
     margin-right: 10px;
 }
 
-.add-bin {
+.add-btn {
+
     position: relative;
-    min-width: 96px;
-    height: 30px;
+    min-width: 103px;
+    min-height: 30px;
 }
+
+@media (max-width: 575px) {
+    form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-item {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
 

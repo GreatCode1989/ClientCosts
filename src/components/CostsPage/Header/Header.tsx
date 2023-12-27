@@ -74,12 +74,12 @@ export const Header = ({ costs }: ICostsHeaderProps) => {
           <input ref={dateRef} type="date" className="form-control mt-1" />
         </div>
         <button className="btn btn-primary add-btn">
-          {spinner ? <Spinner top={5} left={20} /> : "Добавить"}
+          {spinner ? <Spinner top={5} left={35} /> : "Добавить"}
         </button>
       </form>
       <div style={{ textAlign: "end", marginBottom: 10 }}>
         Итого:
-        <span style={{ marginLeft: 5 }}>
+        <span style={{ marginLeft: 5, marginRight: 3 }}>
           {isNaN(totalPrice) ? 0 : parseInt(String(totalPrice))}
         </span>
         грн.
